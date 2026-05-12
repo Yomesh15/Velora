@@ -1,0 +1,178 @@
+/* PAGE LAYOUT */
+.collection-page {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #fff;
+}
+
+/* FILTER SIDEBAR */
+.filters {
+  width: 250px;
+}
+
+.filters h3 {
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-left: -10px;
+}
+
+.search-result {
+  margin-bottom: 29px;
+  margin-top: 40px;
+  margin-left:-27px;
+  color: #666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.filter-box {
+  border: 1px solid #eee;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filter-title {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-box label {
+  display: block;
+  margin: 15px 20px;
+  position: relative;
+  top: 9px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-box input {
+  margin-right: 8px;
+}
+
+/* RIGHT CONTENT */
+.collection-content {
+  flex: 1;
+}
+
+/* TITLE */
+.title {
+  position: relative;
+  top: 19px;
+  font-size: 22px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title span {
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+/* GRID */
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  text-align: left;
+  cursor: pointer;
+}
+
+.image-box {
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.product-card:hover img {
+  transform: scale(1.05);
+}
+
+.product-card h3 {
+  font-size: 15px;
+  margin: 10px 0 5px;
+}
+
+.price {
+  color: #555;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .collection-page {
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .collection-page {
+    flex-direction: column;
+  }
+
+  .filters {
+    width: 100%;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* TOP BAR (TITLE + SORT) */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sort-dropdown {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .sort-dropdown {
+    width: 100%;
+  }
+}
