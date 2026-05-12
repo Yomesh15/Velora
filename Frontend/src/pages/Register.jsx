@@ -32,7 +32,7 @@ const Register = () => {
         setLoading(true);
 
         try {
-            const res = await fetch(`http://localhost:2006/api/register`, {
+            const res = await fetch(`https://velora-5.onrender.com/api/register`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

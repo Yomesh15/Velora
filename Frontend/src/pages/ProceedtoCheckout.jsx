@@ -46,7 +46,7 @@ const ProceedtoCheckout = () => {
             }
 
             const res = await axios.post(
-                "http://localhost:2006/api/checkout",
+                "https://velora-5.onrender.com/api/checkout",
                 orderData
             )
 

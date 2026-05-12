@@ -14,7 +14,7 @@ const Footer = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:2006/api/subscribe",
+        "https://velora-5.onrender.com/api/subscribe",
         { email }
       );
 

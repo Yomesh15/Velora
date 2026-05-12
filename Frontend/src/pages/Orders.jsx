@@ -15,7 +15,7 @@ const Orders = () => {
         try {
 
             const res = await axios.get(
-                "http://localhost:2006/api/orders"
+                "https://velora-5.onrender.com/api/orders"
             )
 
             setOrders(res.data.orders)

@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:2006/api/contact", form);
+      const res = await axios.post("https://velora-5.onrender.com/api/contact", form);
       toast.success(res.data.message);
       setForm({ name: "", email: "", phoneno: "", message: "" });
     } catch (err) {

@@ -13,7 +13,7 @@ const ShopContextProvider = ({ children }) => {
     const fetchd = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:2006/api/products/getallproducts`
+          `https://velora-5.onrender.com/api/products/getallproducts`
         );
 
         console.log("API Response:", res.data);

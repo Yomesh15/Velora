@@ -33,7 +33,7 @@ const AddProduct = () => {
         images: form.images.split(",").map((img) => img.trim()),
       };
 
-      await axios.post("http://localhost:2006/api/products/addproduct", payload);
+      await axios.post("https://velora-5.onrender.com/api/products/addproduct", payload);
 
       toast.success("Product Added Successfully ✅");
 
