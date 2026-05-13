@@ -76,10 +76,10 @@ const Navbar = () => {
 
         {!token ? (
           <div className="auth">
-            <Link to="/login">
+            <Link to="/login" onClick={()=> window.scrollTo({top:0, behavior:"smooth"})}>
               <button className="loginbtn">Login</button>
             </Link>
-            <Link to="/signup">
+            <Link to="/signup" onClick={()=> window.scrollTo({top:0, behavior:"smooth"})}>
               <button>Signup</button>
             </Link>
           </div>
